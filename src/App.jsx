@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
-import Nav from './components/navbar/index'
+import Layout from './layouts/layout'
 import Landing from './components/landing/index'
-import Footer from './components/footer/index'
 
+import { BrowserRouter as Router, createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 const App = () => {
-  const [hover, setHover] = useState(false);
+
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+    <Route path="/" element={<Layout/>}>
+      <Route index element={<Landing/>}/>
+    </Route>)
+  )
   return (
-    <>
-    <Nav/>
-    <Landing/>
-    <Footer/>
-    </>
+    <RouterProvider router={router} />
   )
 }
 

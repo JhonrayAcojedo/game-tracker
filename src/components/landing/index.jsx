@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <div className='bg-black pt-[70px] w-full min-h-screen'>
       <h1 className='text-white text-4xl text-center pt-10'>Welcome to Game Tracker</h1>
-      <div className="relative mx-auto my-10">
+        <div className="relative mx-auto my-10">
           <img src={MEImage} alt="Mirrors edge image" className="w-full transition duration-500 ease-in-out transform hover:scale-105" />
           <div className="absolute inset-0 bg-gray-800 opacity-0 hover:opacity-50 transition-opacity duration-500 flex flex-col items-center justify-center space-y-4">
             <span className='text-white text-xl font-semibold'>Mirrors Edge Catalyst ™</span>
