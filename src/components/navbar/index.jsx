@@ -16,19 +16,19 @@ const Nav = () => {
             <SportsEsportsIcon className="ml-5" fontSize='large'/>
           </div>
 
-          <div className="flex items-center flex-col">
-            <HomeIcon className="text-white text-2xl"/>
-            <a href="#" className="text-white text-xl font-semibold">Home</a>
+          <div className="flex items-center flex-col group">
+            <HomeIcon className="text-white text-2xl group-hover:text-sky-400"/>
+            <a href="#" className="text-white text-xl font-semibold group-hover:text-sky-400">Home</a>
           </div>
 
-          <div className="flex items-center flex-col">
-            <ListAltIcon className="text-white text-2xl"/>
-            <a href="/library" className="text-lg  font-semibold hover:text-sky-400">Library</a>
+          <div className="flex items-center flex-col group">
+            <ListAltIcon className="text-white text-2xl group-hover:text-sky-400"/>
+            <a href="/library" className="text-lg  font-semibold group-hover:text-sky-400">Library</a>
           </div>
 
-          <div className="flex items-center flex-col">
-            <FavoriteIcon className="text-white text-2xl"/>
-            <a href="/favorites" className="text-lg font-semibold hover:text-sky-400">Favorites</a>
+          <div className="flex items-center flex-col group">
+            <FavoriteIcon className="text-white text-2xl group-hover:text-sky-400"/>
+            <a href="/favorites" className="text-lg font-semibold group-hover:text-sky-400">Favorites</a>
           </div>
         </div>
       </div>
