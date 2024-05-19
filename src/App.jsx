@@ -8,10 +8,12 @@ import AddGame from './components/addGame'
 
 import { BrowserRouter as Router, createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 
+const apiUrl = process.env.NODE_ENV === 'production' ? 'https://json-server-gilt-psi.vercel.app/api/games' : '/api/games';
+
 
 const App = () => {
   const addGame = async (newGame) => {
-    const res = await fetch('/api/games', {
+    const res = await fetch('https://json-server-gilt-psi.vercel.app/games', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -22,7 +24,7 @@ const App = () => {
   }
 
   const deleteGame = async (id) => {
-    const res = await fetch(`/api/games/${id}`, {
+    const res = await fetch(`https://json-server-gilt-psi.vercel.app/games/${id}`, {
       method: 'DELETE'
     })
     return

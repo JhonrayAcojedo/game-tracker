@@ -13,7 +13,7 @@ const Library = () => {
   useEffect(() => {
     const fetchGames = async () => {
       try{
-        const result = await fetch('/api/games') // Fetching data from the backend
+        const result = await fetch('https://json-server-gilt-psi.vercel.app/games') // Fetching data from the backend
         const data = await result.json()
         setGames(data)
       }catch(error){
@@ -28,15 +28,15 @@ const Library = () => {
   return (
     <div className='bg-black pt-[70px] w-full min-h-screen'>
       <h1 className='text-white text-4xl text-center pt-10 font-bold'>Welcome to your Game Library</h1>
-        <p className='text-white text-lg text-center pt-5'>Browse to your heart's content</p>
-        <br/>
+      <p className='text-white text-lg text-center pt-5'>Browse to your heart's content</p>
+      <br/>
 
       <div className='flex items-center justify-center'>
-      { loading ?
+        { loading ?
           <div className='flex justify-center items-center h-full'>
             <Spinner/>
           </div> :
-          <div className='grid grid-cols-5 gap-x-16 px-10'>
+          <div className='flex flex-wrap justify-center gap-x-16 gap-y-5 px-10'>
             {games.map((game) => (
               <Card key={game.id} game={game} onClick={() => {navigate(`/library/${game.id}`)}}/>
             ))}
