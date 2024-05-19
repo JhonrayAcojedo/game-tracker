@@ -57,7 +57,7 @@ const Details = ({deleteGame}) => {
 
 const gameLoader = async ({params}) => {
     try{
-        const result = await fetch(`/api/games/${params.id}`)
+        const result = await fetch(`https://json-server-gilt-psi.vercel.app/games/${params.id}`)
         const data = await result.json()
         return data
     }catch(error){
