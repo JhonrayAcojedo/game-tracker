@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className={`h-[300px] bg-black bg-cover flex items-end`}>
 			<div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-				<div className="md:flex justify-center gap-x-40">
+				<div className="flex justify-center gap-x-40">
 					<div className="grid grid-cols gap-10 ">
 						<div>
 							<h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">About me</h2>
@@ -34,7 +34,7 @@ const Footer = () => {
 							<ul className="text-white font-medium">
 								<li className="mb-4">
 									<a
-										href="https://facebook.com"
+										href="https://www.facebook.com/jrayyyyy/"
 										className="hover:underline "
 									>
 										Facebook
@@ -50,7 +50,7 @@ const Footer = () => {
 								</li>
 								<li>
 									<a
-										href="https://linkedin.com"
+										href="https://www.linkedin.com/in/jhonray-acojedo/"
 										className="hover:underline"
 									>
 										LinkedIn
@@ -61,7 +61,7 @@ const Footer = () => {
 					</div>
 				</div>
 				<hr className="my-6 border-white sm:mx-auto lg:my-8" />
-				<div className="sm:flex sm:items-center sm:justify-center">
+				<div className="flex items-center justify-center">
 					<span className="text-sm text-white sm:text-center dark:text-white">
 						© 2024{' '}
 						<a

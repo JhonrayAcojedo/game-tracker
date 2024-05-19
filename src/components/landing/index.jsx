@@ -6,8 +6,8 @@ const Landing = () => {
 const navigate = useNavigate()
 
   return (
-    <div className='bg-black pt-[70px] w-full min-h-screen'>
-      <h1 className='text-white text-4xl text-center pt-10 font-bold'>Welcome to Game Tracker</h1>
+    <div className='bg-black pt-24 w-full min-h-screen'>
+      <h1 className='text-white text-3xl text-center pt-10 font-bold lg:text-4xl'>Welcome to Game Tracker</h1>
         <p className='text-white text-lg text-center pt-5'>The best place to track your favorite games</p>
         <br/>
         <h3 className='text-white text-xl font-semibold text-center pt-5'> Today's featured game</h3>
