@@ -12,7 +12,7 @@ const Details = ({deleteGame}) => {
         navigate('/library')
     }
   return (
-    <div className='bg-black pt-[70px] w-full min-h-screen'>
+    <div className='bg-black pt-[70px] w-full min-h-screen border-b-4 border-white'>
         <img src={game.DetailsImage} alt={game.Title} className='w-full h-[80vh] object-cover'/>
         <h1 className='text-white text-4xl text-center pt-10 font-bold mb-5'>{game.Title}</h1>
         <div className='flex flex-col gap-y-10 justify-center'>
@@ -43,7 +43,7 @@ const Details = ({deleteGame}) => {
             </div>
         </div>
 
-        <div className='flex justify-center mt-5'>
+        <div className='flex justify-center my-5'>
         <button className=' bg-red-800 hover:bg-red-400 text-white font-bold py-2 px-4 rounded-full w-1/2 focus:outline-none focus:shadow-outline min-w-[200px]'
             onClick={() => deleteAndRedirect(id)}
         >
