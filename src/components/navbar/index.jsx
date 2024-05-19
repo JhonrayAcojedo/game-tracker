@@ -1,9 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
-import HomeIcon from '@mui/icons-material/Home';
-import ListAltIcon from '@mui/icons-material/ListAlt';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports'
+import HomeIcon from '@mui/icons-material/Home'
+import ListAltIcon from '@mui/icons-material/ListAlt'
+import FavoriteIcon from '@mui/icons-material/Favorite'
+
 
 const Nav = () => {
   return (
@@ -12,24 +14,26 @@ const Nav = () => {
         <div className="flex items-center justify-between h-full">
           <div className="flex items-center">
             <img src="/vite.svg" alt="Vite Logo" className="w-50 h-50" />
-            <h1 className="text-2xl font-bold ml-5">Game Tracker</h1>
-            <SportsEsportsIcon className="ml-5" fontSize='large'/>
+            <Link to='/' className="flex">
+              <h1 className="text-2xl font-bold ml-5">Game Tracker</h1>
+              <SportsEsportsIcon className="ml-5" fontSize='large'/>
+            </Link>
           </div>
 
-          <div className="flex items-center flex-col group">
+          <Link to="/" className="flex items-center flex-col group">
             <HomeIcon className="text-white text-2xl group-hover:text-sky-400"/>
-            <a href="#" className="text-white text-xl font-semibold group-hover:text-sky-400">Home</a>
-          </div>
+            <span  className="text-white text-xl font-semibold group-hover:text-sky-400">Home</span>
+          </Link>
 
-          <div className="flex items-center flex-col group">
+          <Link to="/library" className="flex items-center flex-col group">
             <ListAltIcon className="text-white text-2xl group-hover:text-sky-400"/>
-            <a href="/library" className="text-lg  font-semibold group-hover:text-sky-400">Library</a>
-          </div>
+            <span className="text-lg  font-semibold group-hover:text-sky-400">Library</span>
+          </Link>
 
-          <div className="flex items-center flex-col group">
+          <Link to="/favorites" className="flex items-center flex-col group">
             <FavoriteIcon className="text-white text-2xl group-hover:text-sky-400"/>
-            <a href="/favorites" className="text-lg font-semibold group-hover:text-sky-400">Favorites</a>
-          </div>
+            <span href="/favorites" className="text-lg font-semibold group-hover:text-sky-400">Favorites</span>
+          </Link>
         </div>
       </div>
     </div>

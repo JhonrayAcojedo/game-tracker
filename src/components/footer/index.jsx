@@ -14,7 +14,7 @@ const Footer = () => {
 										href="#"
 										className="hover:underline"
 									>
-										Who are we?
+										Who am I?
 									</a>
 								</li>
 								<li>
@@ -22,7 +22,7 @@ const Footer = () => {
 										href="#"
 										className="hover:underline"
 									>
-										Team
+										Experiences
 									</a>
 								</li>
 							</ul>
