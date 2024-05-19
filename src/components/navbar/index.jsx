@@ -9,7 +9,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite'
 
 const Nav = () => {
   return (
-    <div className="float-left shadow fixed text-white pl-25 pr-50 bg-black px-8 border-b-4 border-white py-2" style={{width: '100%', height: '70px'}}>
+    <div className="float-left shadow fixed text-white pl-25 pr-50 bg-black px-8 border-b-4 border-white py-2 z-10" style={{width: '100%', height: '70px'}}>
       <div className="lg:block xl:block 2xl:block">
         <div className="flex items-center justify-between h-full">
           <div className="flex items-center">
