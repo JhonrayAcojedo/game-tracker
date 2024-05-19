@@ -1,10 +1,29 @@
 import React from 'react'
 import Card from '../card'
+import Spinner from '../spinner'
 
+import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import data from '../../../games.json'
+
 const Library = () => {
+  const [games, setGames] = useState([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const fetchGames = async () => {
+      try{
+        const result = await fetch('/api/games') // Fetching data from the backend
+        const data = await result.json()
+        setGames(data)
+      }catch(error){
+        console.error(error)
+      } finally {
+        setLoading(false)
+      }
+    }
+    fetchGames()
+  }, [])
   const navigate = useNavigate()
   return (
     <div className='bg-black pt-[70px] w-full min-h-screen'>
@@ -13,9 +32,11 @@ const Library = () => {
         <br/>
 
         <div className='flex columns-4 justify-between px-10'>
-          {data.games.map((game, index) => (
+          { loading ? <Spinner/> :
+          (
+            games.map((game, index) => (
               <Card key={index} game={game} onClick={() => {navigate(`/library/${index}`)}}/>
-          ))}
+          )))}
         </div>
     </div>
   )

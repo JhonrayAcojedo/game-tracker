@@ -1,6 +1,7 @@
 {
   "games": [
     {
+      "id": 1,
       "Title": "The Witcher 3: Wild Hunt",
       "Genre": "Action role-playing",
       "Developer": "CD Projekt Red",
@@ -11,6 +12,7 @@
       "DetailsImage":"https://upload.wikimedia.org/wikipedia/en/0/0c/The_Witcher_3_cover_art.jpg"
     },
     {
+      "id": 2,
       "Title": "Fallout 4",
       "Genre": "Action role-playing, Open world",
       "Developer": "Bethesda Game Studios",
@@ -21,6 +23,7 @@
       "DetailsImage":"https://upload.wikimedia.org/wikipedia/en/0/0c/The_Witcher_3_cover_art.jpg"
     },
     {
+      "id": 3,
       "Title": "The Elder Scrolls V: Skyrim",
       "Genre": "Action role-playing",
       "Developer": "Bethesda Game Studios",
@@ -31,6 +34,7 @@
       "DetailsImage":"https://upload.wikimedia.org/wikipedia/en/0/0c/The_Witcher_3_cover_art.jpg"
     },
     {
+      "id": 4,
       "Title": "Minecraft",
       "Genre": "Sandbox, Survival",
       "Developer": "Mojang Studios",
