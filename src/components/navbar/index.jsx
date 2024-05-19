@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports'
 import HomeIcon from '@mui/icons-material/Home'
 import ListAltIcon from '@mui/icons-material/ListAlt'
-import FavoriteIcon from '@mui/icons-material/Favorite'
+import AddCircleIcon from '@mui/icons-material/AddCircle';
 
 
 const Nav = () => {
@@ -30,9 +30,9 @@ const Nav = () => {
             <span className="text-lg  font-semibold group-hover:text-sky-400">Library</span>
           </Link>
 
-          <Link to="/favorites" className="flex items-center flex-col group">
-            <FavoriteIcon className="text-white text-2xl group-hover:text-sky-400"/>
-            <span href="/favorites" className="text-lg font-semibold group-hover:text-sky-400">Favorites</span>
+          <Link to="/add-game" className="flex items-center flex-col group">
+            <AddCircleIcon className="text-white text-2xl group-hover:text-sky-400"/>
+            <span href="/add-game" className="text-lg font-semibold group-hover:text-sky-400">Add Game</span>
           </Link>
         </div>
       </div>

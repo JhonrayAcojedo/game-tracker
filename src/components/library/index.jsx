@@ -31,13 +31,15 @@ const Library = () => {
         <p className='text-white text-lg text-center pt-5'>Browse to your heart's content</p>
         <br/>
 
-        <div className='flex columns-4 justify-between px-10'>
+      <div className='flex items-center justify-center'>
+        <div className='grid grid-cols-5 gap-x-16 px-10'>
           { loading ? <Spinner/> :
           (
             games.map((game) => (
               <Card key={game.id} game={game} onClick={() => {navigate(`/library/${game.id}`)}}/>
           )))}
         </div>
+      </div>
     </div>
   )
 }

@@ -1,48 +1,108 @@
 {
   "games": [
     {
-      "id": 1,
+      "id": "1",
       "Title": "The Witcher 3: Wild Hunt",
       "Genre": "Action role-playing",
       "Developer": "CD Projekt Red",
       "ReleaseDate": "May 19, 2015",
-      "Platform": ["PlayStation 4", "Windows", "Xbox One", "Nintendo Switch", "PlayStation 5", "Xbox Series X/S"],
+      "Platform": [
+        "PlayStation 4",
+        "Windows",
+        "Xbox One",
+        "Nintendo Switch",
+        "PlayStation 5",
+        "Xbox Series X/S"
+      ],
       "Description": "An action role-playing game set in an open world environment where players control Geralt of Rivia, a monster slayer for hire known as a Witcher, and search for his adopted daughter, who is on the run from the otherworldly Wild Hunt.",
       "Image": "https://m.media-amazon.com/images/M/MV5BMDU4ODc1M2UtODg3Ny00NDViLTkxNmQtMzMzZWM1NGRmYTNjXkEyXkFqcGdeQXVyODY5Njk4Njc@._V1_.jpg",
-      "DetailsImage":"https://image.api.playstation.com/vulcan/ap/rnd/202211/0712/TJdORs7iyJT91csQVdw7JawD.png"
+      "DetailsImage": "https://image.api.playstation.com/vulcan/ap/rnd/202211/0712/TJdORs7iyJT91csQVdw7JawD.png"
     },
     {
-      "id": 2,
+      "id": "2",
       "Title": "Fallout 4",
       "Genre": "Action role-playing, Open world",
       "Developer": "Bethesda Game Studios",
       "ReleaseDate": "November 10, 2015",
-      "Platform": ["PC", "Xbox 360", "PS3", "Xbox One", "PS4", "PS5", "Xbox Series X/S"],
+      "Platform": [
+        "PC",
+        "Xbox 360",
+        "PS3",
+        "Xbox One",
+        "PS4",
+        "PS5",
+        "Xbox Series X/S"
+      ],
       "Description": "As the sole survivor of Vault 111, you enter a world destroyed by nuclear war. Every second is a fight for survival, and every choice is yours. Only you can rebuild and determine the fate of the Wasteland.",
       "Image": "https://upload.wikimedia.org/wikipedia/en/7/70/Fallout_4_cover_art.jpg",
-      "DetailsImage":"https://cdn1.epicgames.com/offer/9c1a74145a9145ec803d7452e80819a0/EGS_Fallout4_BethesdaGameStudios_S1_2560x1440-fb0e82fa71a74e750c95b57b91fc558d"
+      "DetailsImage": "https://cdn1.epicgames.com/offer/9c1a74145a9145ec803d7452e80819a0/EGS_Fallout4_BethesdaGameStudios_S1_2560x1440-fb0e82fa71a74e750c95b57b91fc558d"
     },
     {
-      "id": 3,
+      "id": "3",
       "Title": "The Elder Scrolls V: Skyrim",
       "Genre": "Action role-playing",
       "Developer": "Bethesda Game Studios",
       "ReleaseDate": "November 11, 2011",
-      "Platform": ["Microsoft Windows", "PlayStation 3", "Xbox 360", "PlayStation 4", "Xbox One", "Nintendo Switch", "PlayStation 5", "Xbox Series X/S"],
+      "Platform": [
+        "Microsoft Windows",
+        "PlayStation 3",
+        "Xbox 360",
+        "PlayStation 4",
+        "Xbox One",
+        "Nintendo Switch",
+        "PlayStation 5",
+        "Xbox Series X/S"
+      ],
       "Description": "The game is set 200 years after the events of Oblivion and takes place in Skyrim, the northernmost province of Tamriel. The main story focuses on the player's character, the Dragonborn, on their quest to defeat Alduin the World-Eater, a dragon who is prophesied to destroy the world.",
       "Image": "https://upload.wikimedia.org/wikipedia/en/1/15/The_Elder_Scrolls_V_Skyrim_cover.png",
-      "DetailsImage":"https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/06/Skyrim-1.jpg"
+      "DetailsImage": "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/06/Skyrim-1.jpg"
     },
     {
-      "id": 4,
+      "id": "4",
       "Title": "Minecraft",
       "Genre": "Sandbox, Survival",
       "Developer": "Mojang Studios",
       "ReleaseDate": "November 18, 2011",
-      "Platform": ["Windows", "macOS", "Linux", "Android", "iOS", "Xbox 360", "Raspberry Pi", "Windows Phone", "PlayStation 3", "Fire OS", "PlayStation 4", "Xbox One", "PlayStation Vita", "Universal Windows Platform", "Wii U", "tvOS", "Nintendo Switch", "New Nintendo 3DS", "PlayStation VR", "Java"],
+      "Platform": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS",
+        "Xbox 360",
+        "Raspberry Pi",
+        "Windows Phone",
+        "PlayStation 3",
+        "Fire OS",
+        "PlayStation 4",
+        "Xbox One",
+        "PlayStation Vita",
+        "Universal Windows Platform",
+        "Wii U",
+        "tvOS",
+        "Nintendo Switch",
+        "New Nintendo 3DS",
+        "PlayStation VR",
+        "Java"
+      ],
       "Description": "A sandbox game that allows players to build 3D worlds with a variety of different blocks in a randomly generated world.",
       "Image": "https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png",
-      "DetailsImage":"https://wallpapers.com/images/featured/minecraft-s2kxfahyg30sob8q.jpg"
+      "DetailsImage": "https://wallpapers.com/images/featured/minecraft-s2kxfahyg30sob8q.jpg"
+    },
+    {
+      "id": "f767",
+      "Title": "Valorant",
+      "Genre": "Shooter",
+      "Developer": "Riot",
+      "ReleaseDate": "June 15, 2020",
+      "Platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "Description": "Shooter game",
+      "Image": "https://images.prismic.io/play-vs/fee8305e-f484-4eff-bd85-55a7e07e03d5_ValorantHeronobanner.jpg?auto=compress,format",
+      "DetailsImage": "https://cdn.vcgamers.com/news/wp-content/uploads/2022/10/3-tips-memilih-agent-Valorant.jpg"
     }
   ]
 }

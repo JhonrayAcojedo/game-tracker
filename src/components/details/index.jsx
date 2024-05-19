@@ -1,9 +1,16 @@
 import React from 'react'
 import { useParams, useLoaderData} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
-const Details = () => {
+const Details = ({deleteGame}) => {
     const { id } = useParams()
     const game = useLoaderData()
+    const navigate = useNavigate()
+
+    const deleteAndRedirect = async (id) => {
+        await deleteGame(id)
+        navigate('/library')
+    }
   return (
     <div className='bg-black pt-[70px] w-full min-h-screen'>
         <img src={game.DetailsImage} alt={game.Title} className='w-full h-[80vh] object-cover'/>
@@ -31,9 +38,17 @@ const Details = () => {
             <div className='flex justify-center items-center'>
                 <div className='text-center min-h-7 bg-neutral-700 rounded-xl w-1/2 flex flex-col px-10 py-4 gap-y-2'>
                     <h2 className='text-white text-2xl font-bold'>Description</h2>
-                    <p className='text-white text-justify'>{game.Description}</p>
+                    <p className='text-white text-center'>{game.Description}</p>
                 </div>
             </div>
+        </div>
+
+        <div className='flex justify-center mt-5'>
+        <button className=' bg-red-800 hover:bg-red-400 text-white font-bold py-2 px-4 rounded-full w-1/2 focus:outline-none focus:shadow-outline min-w-[200px]'
+            onClick={() => deleteAndRedirect(id)}
+        >
+                    Delete Game
+        </button>
         </div>
 
     </div>
